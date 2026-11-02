@@ -1,0 +1,123 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>تقرير مهارات Autoharness</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1d2430;--mut:#5b6678;--line:#e1e5ec;--ok:#1f7a4d;--warn:#9a5b00;--bad:#b3261e;--acc:#2456d6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Segoe UI",Tahoma,"Noto Naskh Arabic","Noto Sans Arabic",Arial,sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 56px}
+h1{font-size:1.7rem;margin:.2rem 0}h2{font-size:1.25rem;margin:2rem 0 .6rem;border-bottom:2px solid var(--line);padding-bottom:.3rem}
+h3{font-size:1.05rem;margin:.2rem 0}
+.sub{color:var(--mut);margin:0 0 1rem}
+.banner{border-radius:10px;padding:14px 16px;margin:12px 0;font-weight:600}
+.banner.sample{background:#fff4d6;border:2px solid #e6a700;color:#5c3d00}
+.banner.real{background:#e3f6ec;border:2px solid #2aa36b;color:#0f4a2e}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.stat b{display:block;font-size:1.6rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:10px 0}
+.tag{display:inline-block;border-radius:999px;padding:0 10px;font-size:.85rem;font-weight:700;margin-inline-start:6px;color:#fff}
+.tag.created{background:var(--ok)}.tag.updated{background:var(--acc)}.tag.merged{background:#6b3fc4}.tag.pruned{background:var(--bad)}
+.ev{border-inline-start:4px solid var(--line);padding:4px 12px;margin:8px 0}
+.ev.created{border-color:var(--ok)}.ev.updated{border-color:var(--acc)}.ev.merged{border-color:#6b3fc4}.ev.pruned{border-color:var(--bad)}
+blockquote{margin:6px 0;padding:6px 10px;background:#f1f3f7;border-radius:6px;direction:ltr;text-align:left;font-size:.93rem;white-space:pre-wrap}
+.ar{color:var(--mut);font-size:.95rem}
+code,.mono{font-family:ui-monospace,Menlo,Consolas,monospace;direction:ltr;unicode-bidi:isolate;display:inline-block;font-size:.88rem;background:#eef0f5;padding:0 5px;border-radius:4px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top;font-size:.93rem}th{background:#eef1f6}
+.small{font-size:.85rem;color:var(--mut)}
+footer{margin-top:2.5rem;border-top:2px solid var(--line);padding-top:12px;color:var(--mut);font-size:.9rem}
+a{color:var(--acc)}
+</style></head><body><main>
+<h1>تقرير المهارات التي أنشأها Autoharness</h1>
+<p class="sub">ما الذي أنشأه Autoharness ودمجه وحدّثه وقلّمه، ولماذا؟ مأخوذ من «سجل الأسباب» (ledger) الذي يحفظه على القرص.</p>
+<div class="banner sample" role="note">⚠️ <b>بيانات مثال (SAMPLE / EXAMPLE DATA)</b> — هذا التقرير مبني على بيانات توضيحية مولَّدة دون اتصال بالإنترنت، <u>ولم تنتج من جلسات Claude حقيقية</u>. أسماء المهارات تبدأ بـ <code>sample-</code>. لتشغيل حقيقي: سجّل الدخول إلى Claude Code ثم نفّذ <code>python -m autoharness_lab demo --mode real</code>.</div>
+<h2>الملخص</h2><div class="cards">
+<div class="stat"><b>6</b>مهارات أُنشئت</div>
+<div class="stat"><b>1</b>تحديثات</div>
+<div class="stat"><b>1</b>دمج</div>
+<div class="stat"><b>2</b>تقليم</div>
+<div class="stat"><b>1</b>مقترحات مرفوضة</div>
+<div class="stat"><b>3</b>مهارات نشطة الآن</div>
+</div>
+<h2>قصة كل مهارة</h2>
+<div class="card"><h3><span class="mono">sample-node-18-note</span> <span class="small">(environment · مؤرشفة)</span></h3>
+<div class="small" dir="ltr" lang="en">Use when picking a Node version for the docs build.</div>
+<div class="ev created"><span class="tag created">أُنشئت</span> <span class="small">مهارة جديدة تعلّمها Autoharness من الجلسة</span>
+<blockquote dir="ltr" lang="en">Session mentioned the docs build needs Node 18.</blockquote><div class="ar">ترجمة توضيحية للمثال: ذكرت الجلسة أن بناء التوثيق يحتاج Node 18.</div>
+<div class="small">الدليل: <span class="mono">references/evidence-e70dfe7236c7b5928d023b05a7eea623394a33d8cf671170bd37be12e686b487.md</span></div>
+</div>
+<div class="ev pruned"><span class="tag pruned">قُلِّمت (حذف متعمّد)</span> <span class="small">أُرشفت بقرار صريح مع سبب مسجّل</span>
+<blockquote dir="ltr" lang="en">Later session showed the docs build was removed from the project, so this rule is obsolete and misleading.</blockquote><div class="ar">ترجمة توضيحية للمثال: أظهرت جلسة لاحقة أن بناء التوثيق أُزيل من المشروع، فأصبحت القاعدة قديمة ومضلِّلة. (حذف متعمّد مع سبب مسجّل.)</div>
+<div class="small">الدليل: <span class="mono">references/evidence-734048d9316f569a9986545efd763e10b5fb2795c22aa18d126f017243252c60.md</span></div>
+</div>
+</div>
+<div class="card"><h3><span class="mono">sample-run-unittest-quietly</span> <span class="small">(testing · نشطة)</span></h3>
+<div class="small" dir="ltr" lang="en">Use when running slugkit tests or seeing &#x27;Ran 0 tests&#x27;.</div>
+<div class="ev created"><span class="tag created">أُنشئت</span> <span class="small">مهارة جديدة تعلّمها Autoharness من الجلسة</span>
+<blockquote dir="ltr" lang="en">User had to ask twice how to run the tests; bare `python -m unittest` ran 0 tests. The working command is reusable for every task in this repo.</blockquote><div class="ar">ترجمة توضيحية للمثال: المستخدم سأل مرتين عن طريقة تشغيل الاختبارات، والأمر المجرّد لم يشغّل أي اختبار. الأمر الصحيح قابل لإعادة الاستخدام في كل مهمة بالمستودع.</div>
+<div class="small">الدليل: <span class="mono">references/evidence-6f58b8530f271ae0cab5a0b018b08fe15dfbfd0b6d6da3b32c24ca9c325e555d.md</span></div>
+</div>
+<div class="ev updated"><span class="tag updated">حُدِّثت</span> <span class="small">تعديل مهارة موجودة بدل إنشاء نسخة مكررة</span>
+<blockquote dir="ltr" lang="en">User corrected the skill: stop at the first failure with -f so the output stays readable.</blockquote><div class="ar">ترجمة توضيحية للمثال: صحّح المستخدم المهارة: يجب الإيقاف عند أول فشل بإضافة -f ليبقى الإخراج مقروءًا. (تحديث للمهارة نفسها بدل إنشاء مهارة مكررة.)</div>
+<div class="small">الدليل: <span class="mono">references/evidence-622c4cd6635d70547e38d1b0512738c7a4dd395409b2f607292f5a218b23533b.md</span></div>
+</div>
+</div>
+<div class="card"><h3><span class="mono">sample-slugify-unicode-normalization</span> <span class="small">(python-text · نشطة)</span></h3>
+<div class="small" dir="ltr" lang="en">Use when slugify output has accents or non-ASCII letters.</div>
+<div class="ev created"><span class="tag created">أُنشئت</span> <span class="small">مهارة جديدة تعلّمها Autoharness من الجلسة</span>
+<blockquote dir="ltr" lang="en">Failing test `test_unicode` showed that accented letters were dropped instead of transliterated; the NFKD-then-strip technique fixed it and applies to any slug helper.</blockquote><div class="ar">ترجمة توضيحية للمثال: اختبار `test_unicode` فشل لأن الحروف المشكّلة كانت تُحذف بدل أن تُحوَّل. تقنية NFKD ثم إزالة العلامات حلّت المشكلة وتنطبق على أي دالة slug.</div>
+<div class="small">الدليل: <span class="mono">references/evidence-9fcc5bc31eb3c4b49097eeccee8b4c555683846233bf98ce379d7c937e0978a6.md</span></div>
+</div>
+</div>
+<div class="card"><h3><span class="mono">sample-changelog-entry-format</span> <span class="small">(docs · مؤرشفة)</span></h3>
+<div class="small" dir="ltr" lang="en">Use when adding a CHANGELOG.md entry for slugkit.</div>
+<div class="ev created"><span class="tag created">أُنشئت</span> <span class="small">مهارة جديدة تعلّمها Autoharness من الجلسة</span>
+<blockquote dir="ltr" lang="en">The change request asked for a CHANGELOG line; the format was stated once.</blockquote><div class="ar">ترجمة توضيحية للمثال: طُلب إضافة سطر في CHANGELOG وذُكر التنسيق مرة واحدة.</div>
+<div class="small">الدليل: <span class="mono">references/evidence-637cde45431c506adc6e0dfc4d8556d05b86921ace440ba9d0786e098aef06f1.md</span></div>
+</div>
+<div class="ev pruned"><span class="tag pruned">قُلِّمت (آليًا)</span> <span class="small">أرشفتها دورة الحياة تلقائيًا؛ لا يوجد سطر في السجل</span>
+
+<div class="ar">لا يوجد سبب مكتوب في السجل لأن القرار آلي. استنتاج التقرير من العدّادات (use=0، view=0): لم تُستخدم ولم تُعرض طوال فترة التجربة (مراجعة التخرّج).</div>
+</div>
+</div>
+<div class="card"><h3><span class="mono">sample-unittest-tempdir-fixture</span> <span class="small">(testing · مؤرشفة)</span></h3>
+<div class="small" dir="ltr" lang="en">Use when a slugkit test needs temporary files.</div>
+<div class="ev created"><span class="tag created">أُنشئت</span> <span class="small">مهارة جديدة تعلّمها Autoharness من الجلسة</span>
+<blockquote dir="ltr" lang="en">New feature tests needed scratch files; the TemporaryDirectory + addCleanup pattern kept the repo tree clean.</blockquote><div class="ar">ترجمة توضيحية للمثال: اختبارات الميزة الجديدة احتاجت ملفات مؤقتة، ونمط TemporaryDirectory مع addCleanup أبقى المستودع نظيفًا.</div>
+<div class="small">الدليل: <span class="mono">references/evidence-fe66be076ac42d68d2603c13e6cc835904f5da3cc11cecb8f6f9502218bc912e.md</span></div>
+</div>
+<div class="ev merged"><span class="tag merged">دُمجت</span> <span class="small">طُويت في مهارة شاملة؛ دمج وليس موتًا</span> ← دُمجت في <span class="mono">sample-testing-conventions</span>
+<blockquote dir="ltr" lang="en">Folded into the umbrella skill `sample-testing-conventions`: same scenario (how to write slugkit tests), so keeping two near-duplicates would only add noise.</blockquote><div class="ar">ترجمة توضيحية للمثال: دُمجت في المهارة الشاملة `sample-testing-conventions`: نفس السيناريو (كتابة اختبارات slugkit)، وإبقاء نسختين متشابهتين يضيف ضجيجًا فقط. (هذا دمج وليس موتًا: السجل يذكر المهارة التي استوعبتها.)</div>
+<div class="small">الدليل: <span class="mono">references/evidence-150c4184f7371cf2a3318196919678c537207d7677c295a2b8ccb65776cfdd5d.md</span></div>
+</div>
+</div>
+<div class="card"><h3><span class="mono">sample-testing-conventions</span> <span class="small">(testing · نشطة)</span></h3>
+<div class="small" dir="ltr" lang="en">Use when writing or running tests in slugkit.</div>
+<div class="ev created"><span class="tag created">أُنشئت</span> <span class="small">مهارة جديدة تعلّمها Autoharness من الجلسة</span>
+<blockquote dir="ltr" lang="en">Consolidation pass: several small testing skills describe one scenario (writing/running slugkit tests); created one umbrella to hold them.</blockquote><div class="ar">ترجمة توضيحية للمثال: مرحلة التوحيد: عدّة مهارات صغيرة تصف سيناريو واحدًا (كتابة/تشغيل اختبارات slugkit)، فأُنشئت مهارة شاملة تجمعها.</div>
+<div class="small">الدليل: <span class="mono">references/evidence-afc1a6e24a7a8784edcdeb0da7204feb82e7e9eec8ae5b3f33953cc186f0c80f.md</span></div>
+</div>
+</div>
+<h2>مقترحات رُفضت</h2><p class="sub">يرفض «المُروِّج» (promoter) أي مقترح لا يستوفي الشروط، ويسجّل السبب في ملف التشغيل <code>runs/&lt;id&gt;.json</code>.</p>
+<table><tr><th>الإجراء</th><th>المهارة</th><th>سبب الرفض</th><th>التشغيل</th></tr>
+<tr><td>create</td><td class="mono">sample-fix-stuff</td><td>الوصف بلا عبارة تشغيل واضحة (متى تُستخدم المهارة) (<code>trigger</code>)</td><td class="mono small">sample-s2-3-b2</td></tr>
+</table>
+<h2>جدول المهارات</h2><table><tr><th>المهارة</th><th>الحالة</th><th>use / view / patch</th><th>سطور السجل</th><th>الحجم</th><th>المكان</th></tr>
+<tr><td class="mono">sample-node-18-note</td><td>مؤرشفة</td><td class="mono">0 / 0 / 0</td><td>2</td><td>882 B</td><td class="mono small">.claude/skills/.archive/sample-node-18-note</td></tr>
+<tr><td class="mono">sample-run-unittest-quietly</td><td>نشطة</td><td class="mono">7 / 2 / 1</td><td>2</td><td>1.3 KB</td><td class="mono small">.claude/skills/sample-run-unittest-quietly</td></tr>
+<tr><td class="mono">sample-slugify-unicode-normalization</td><td>نشطة</td><td class="mono">3 / 1 / 0</td><td>1</td><td>882 B</td><td class="mono small">.claude/skills/sample-slugify-unicode-normalization</td></tr>
+<tr><td class="mono">sample-changelog-entry-format</td><td>مؤرشفة</td><td class="mono">0 / 0 / 0</td><td>1</td><td>570 B</td><td class="mono small">.claude/skills/.archive/sample-changelog-entry-format</td></tr>
+<tr><td class="mono">sample-unittest-tempdir-fixture</td><td>مؤرشفة</td><td class="mono">1 / 0 / 0</td><td>2</td><td>1.1 KB</td><td class="mono small">.claude/skills/.archive/sample-unittest-tempdir-fixture</td></tr>
+<tr><td class="mono">sample-testing-conventions</td><td>نشطة</td><td class="mono">2 / 1 / 0</td><td>1</td><td>818 B</td><td class="mono small">.claude/skills/sample-testing-conventions</td></tr>
+</table>
+<p class="small">الحجم الكلي: مهارات نشطة 2.9 KB · مؤرشفة 2.5 KB · ملفات الحالة 1.6 KB. عدّاد الطلبات: 8.</p>
+<h2>كيف تعرض هذه الملفات أو تعدّلها أو تحذفها</h2><div class="card"><ul>
+<li><code>python -m autoharness_lab where</code> — أين تُخزَّن الملفات وكم حجمها</li>
+<li><code>python -m autoharness_lab list</code> — قائمة المهارات</li>
+<li><code>python -m autoharness_lab show &lt;اسم&gt;</code> — عرض مهارة وسجلّها</li>
+<li><code>python -m autoharness_lab edit &lt;اسم&gt;</code> — فتح المهارة في المحرّر</li>
+<li><code>python -m autoharness_lab delete &lt;اسم&gt;</code> — أرشفة (قابلة للتراجع) أو <code>--hard</code> للحذف النهائي</li>
+</ul></div>
+<footer>تقرير مولَّد بواسطة <b>autoharness-lab</b> v0.1.0 — مشروع تجريبي شخصي لـ muhamed khalifa مبني فوق <a href="https://github.com/tigerless-labs/autoharness">Autoharness</a> من Tigerless Labs (ترخيص MIT). النسخة المثبّتة: <span class="mono">0.5.3</span> / <span class="mono">92015c0</span>. هذا المستودع ليس المشروع الرسمي ولا يحتوي على شيفرته.</footer>
+</main></body></html>
