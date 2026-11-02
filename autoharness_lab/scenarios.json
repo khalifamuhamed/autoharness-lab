@@ -1,0 +1,19 @@
+{
+  "_comment": "Scripted headless sessions run against the toy slugkit repo. Each prompt is plain English on purpose: Autoharness's reflector reads the transcript, not this file. Each session makes several tool calls so the (lowered) reflection threshold is reached.",
+  "sessions": [
+    {"id": "fix-unicode", "title_ar": "إصلاح اختبار يونيكود",
+     "prompt": "Run this repo's tests, find out why test_unicode fails, and fix it in slugkit/text.py. Re-run the tests to confirm. Finish with two lines: the exact test command that works here, and the technique you used."},
+    {"id": "add-truncate", "title_ar": "إضافة دالة truncate_slug",
+     "prompt": "Add truncate_slug(slug, max_len) to slugkit/text.py: cut at a hyphen boundary, never leave a trailing '-'. Add two tests in tests/test_text.py, then run the whole test suite."},
+    {"id": "correction", "title_ar": "تصحيح من المستخدم",
+     "prompt": "Run the tests again. Correction for next time: when running tests in this repo always stop at the first failure by adding -f to the unittest command. Then add a test for slugify('') and fix the code if it fails."},
+    {"id": "changelog", "title_ar": "ملف CHANGELOG",
+     "prompt": "Create CHANGELOG.md with a '## Unreleased' section. Entry format is '- <Verb> <what> (#issue)'. Add entries for truncate_slug (#12) and the unicode fix (#11), then read the file back to check the format."},
+    {"id": "cli", "title_ar": "واجهة سطر أوامر",
+     "prompt": "Add slugkit/__main__.py so that `python3 -m slugkit \"Some Title\"` prints the slug. Add a test for it and run the full test suite using the standard test command for this repo."},
+    {"id": "tidy", "title_ar": "تنظيف الشيفرة",
+     "prompt": "Review slugkit/text.py for duplication or unclear names, tidy it without changing behaviour, and re-run the test suite."},
+    {"id": "docs", "title_ar": "تحديث README",
+     "prompt": "Update README.md with a Usage section covering slugify, truncate_slug and the CLI. Re-run the tests at the end."}
+  ]
+}
