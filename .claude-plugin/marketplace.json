@@ -1,0 +1,19 @@
+{
+  "name": "autoharness-lab-pins",
+  "description": "Pins the exact Autoharness commit used by autoharness-lab (a personal demo). Autoharness itself is by Tigerless Labs, MIT.",
+  "owner": {
+    "name": "muhamed khalifa"
+  },
+  "plugins": [
+    {
+      "name": "autoharness",
+      "description": "Autoharness (Tigerless Labs, MIT) pinned to commit 92015c0, plugin version 0.5.3.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/tigerless-labs/autoharness.git",
+        "ref": "main",
+        "sha": "92015c0b2583072d892b54ab83352ad3490c0a7f"
+      }
+    }
+  ]
+}

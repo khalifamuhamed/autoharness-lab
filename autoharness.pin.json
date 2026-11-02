@@ -1,0 +1,12 @@
+{
+  "_comment": "The single source of truth for the pinned Autoharness dependency. Autoharness is a Claude Code plugin (not a pip package); it is installed through a Claude Code marketplace entry that pins an exact commit. Nothing from upstream is copied into this repo.",
+  "name": "autoharness",
+  "upstream": "https://github.com/tigerless-labs/autoharness",
+  "license": "MIT",
+  "plugin_version": "0.5.3",
+  "commit": "92015c0b2583072d892b54ab83352ad3490c0a7f",
+  "marketplace_name": "autoharness-lab-pins",
+  "plugin_id": "autoharness@autoharness-lab-pins",
+  "python_required": ">=3.11",
+  "pypi_warning": "The PyPI project named 'autoharness' is a different, unrelated project. Do NOT pip install it."
+}
