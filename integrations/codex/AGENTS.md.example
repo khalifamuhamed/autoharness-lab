@@ -1,0 +1,9 @@
+# Project guidance for Codex
+
+## Skills
+- Reusable skills live in `.agents/skills/<name>/SKILL.md`. Read the relevant one before starting a task
+  that matches its `description`.
+- These skills are a read-only snapshot exported from a Claude Code project where Autoharness
+  (https://github.com/tigerless-labs/autoharness) maintains them. Do not edit them here; if a rule is
+  wrong, say so in your answer so a human can fix it in the source project.
+- Never copy secrets, tokens or personal data into a skill.

@@ -1,0 +1,17 @@
+{
+  "extraKnownMarketplaces": {
+    "autoharness-lab-pins": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/khalifamuhamed/autoharness-lab.git"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "autoharness@autoharness-lab-pins": true
+  },
+  "env": {
+    "AUTOHARNESS_REFLECT_EVERY_N": "50",
+    "AUTOHARNESS_DISABLE_GLOBAL": "1"
+  }
+}

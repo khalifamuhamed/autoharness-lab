@@ -1,0 +1,4 @@
+# Merge this `skills:` block into ~/.hermes/config.yaml (Hermes Agent). No credentials here.
+skills:
+  external_dirs:
+    - ~/shared-skills   # created by: python -m autoharness_lab export ~/shared-skills
